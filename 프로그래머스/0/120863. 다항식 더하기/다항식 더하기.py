@@ -1,7 +1,7 @@
 def solution(polynomial):
     terms = polynomial.split(" + ")
-    x_sum = 0  # x항 계수의 합
-    num_sum = 0  # 숫자 항의 합
+    x_sum = 0
+    num_sum = 0
 
     for term in terms:
         if "x" in term:
@@ -12,7 +12,6 @@ def solution(polynomial):
         else:
             num_sum += int(term)
 
-    # 결과 문자열 만들기
     result = ""
 
     if x_sum > 0:
